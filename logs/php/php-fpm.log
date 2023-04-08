@@ -15,3 +15,4 @@
 [07-Apr-2023 20:05:23] NOTICE: exiting, bye-bye!
 [07-Apr-2023 20:05:26] NOTICE: fpm is running, pid 15431
 [07-Apr-2023 20:05:26] NOTICE: ready to handle connections
+[08-Apr-2023 08:24:53] WARNING: [pool www] child 15445 said into stderr: "sh: gs: command not found"
