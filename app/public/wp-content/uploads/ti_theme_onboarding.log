@@ -1,18 +1,18 @@
-[08/Apr/2023:09:57:46] (I): WordPress Instance Info:
-[08/Apr/2023:09:57:46] (I): Home URL : http://deviofuzz.local
-[08/Apr/2023:09:57:46] (I): Site URL : http://deviofuzz.local
-[08/Apr/2023:09:57:46] (I): WordPress Version : 6.2
-[08/Apr/2023:09:57:46] (I): Onboarding Version : 1.1.37
-[08/Apr/2023:09:57:46] (I): Multisite : No
-[08/Apr/2023:09:57:46] (I): Server Info : nginx/1.16.0
-[08/Apr/2023:09:57:46] (I): PHP Version : 8.1.9
-[08/Apr/2023:09:57:46] (I): HTTPS : No
-[08/Apr/2023:09:57:46] (I): PHP Max Execution Time : 1200
-[08/Apr/2023:09:57:46] (I): PHP Max Input Vars : 4000
-[08/Apr/2023:09:57:46] (I): Max Upload Size : 314572800
-[08/Apr/2023:09:57:46] (I): Plugins:
-[08/Apr/2023:09:57:46] (I): [PLUGIN] Gutenberg : v15.5.0 (Gutenberg Team)
-[08/Apr/2023:09:57:46] (I): [PLUGIN] Image optimization service by Optimole : v3.6.0 (Optimole)
-[08/Apr/2023:09:57:46] (I): [PLUGIN] Otter – Page Builder Blocks &amp; Extensions for Gutenberg : v2.2.4 (ThemeIsle)
-[08/Apr/2023:09:57:46] (I): [PLUGIN] Simply Static : v2.2.9 (Patrick Posner)
-[08/Apr/2023:09:57:46] (I): [PLUGIN] Templates Patterns Collection : v1.1.37 (ThemeIsle)
+[08/Apr/2023:19:49:31] (I): WordPress Instance Info:
+[08/Apr/2023:19:49:31] (I): Home URL : http://deviofuzz.local
+[08/Apr/2023:19:49:31] (I): Site URL : http://deviofuzz.local
+[08/Apr/2023:19:49:31] (I): WordPress Version : 6.2
+[08/Apr/2023:19:49:31] (I): Onboarding Version : 1.1.37
+[08/Apr/2023:19:49:31] (I): Multisite : No
+[08/Apr/2023:19:49:31] (I): Server Info : nginx/1.16.0
+[08/Apr/2023:19:49:31] (I): PHP Version : 8.1.9
+[08/Apr/2023:19:49:31] (I): HTTPS : No
+[08/Apr/2023:19:49:31] (I): PHP Max Execution Time : 1200
+[08/Apr/2023:19:49:31] (I): PHP Max Input Vars : 4000
+[08/Apr/2023:19:49:31] (I): Max Upload Size : 314572800
+[08/Apr/2023:19:49:31] (I): Plugins:
+[08/Apr/2023:19:49:31] (I): [PLUGIN] Gutenberg : v15.5.0 (Gutenberg Team)
+[08/Apr/2023:19:49:31] (I): [PLUGIN] Image optimization service by Optimole : v3.6.0 (Optimole)
+[08/Apr/2023:19:49:31] (I): [PLUGIN] Otter – Page Builder Blocks &amp; Extensions for Gutenberg : v2.2.4 (ThemeIsle)
+[08/Apr/2023:19:49:31] (I): [PLUGIN] Simply Static : v2.2.9 (Patrick Posner)
+[08/Apr/2023:19:49:31] (I): [PLUGIN] Templates Patterns Collection : v1.1.37 (ThemeIsle)
