@@ -1,18 +1,18 @@
-[07/Apr/2023:18:11:43] (I): WordPress Instance Info:
-[07/Apr/2023:18:11:43] (I): Home URL : http://deviofuzz.local
-[07/Apr/2023:18:11:43] (I): Site URL : http://deviofuzz.local
-[07/Apr/2023:18:11:43] (I): WordPress Version : 6.2
-[07/Apr/2023:18:11:43] (I): Onboarding Version : 1.1.37
-[07/Apr/2023:18:11:43] (I): Multisite : No
-[07/Apr/2023:18:11:43] (I): Server Info : nginx/1.16.0
-[07/Apr/2023:18:11:43] (I): PHP Version : 8.1.9
-[07/Apr/2023:18:11:43] (I): HTTPS : No
-[07/Apr/2023:18:11:43] (I): PHP Max Execution Time : 1200
-[07/Apr/2023:18:11:43] (I): PHP Max Input Vars : 4000
-[07/Apr/2023:18:11:43] (I): Max Upload Size : 314572800
-[07/Apr/2023:18:11:43] (I): Plugins:
-[07/Apr/2023:18:11:43] (I): [PLUGIN] Otter – Page Builder Blocks &amp; Extensions for Gutenberg : v2.2.4 (ThemeIsle)
-[07/Apr/2023:18:11:43] (I): [PLUGIN] Templates Patterns Collection : v1.1.37 (ThemeIsle)
-[07/Apr/2023:18:11:43] (P): Installing optimole-wp.
-[07/Apr/2023:18:11:45] (P): Activating optimole-wp.
-[07/Apr/2023:18:11:45] (S): Installed and activated plugins.
+[08/Apr/2023:09:44:55] (I): WordPress Instance Info:
+[08/Apr/2023:09:44:55] (I): Home URL : http://deviofuzz.local
+[08/Apr/2023:09:44:55] (I): Site URL : http://deviofuzz.local
+[08/Apr/2023:09:44:55] (I): WordPress Version : 6.2
+[08/Apr/2023:09:44:55] (I): Onboarding Version : 1.1.37
+[08/Apr/2023:09:44:55] (I): Multisite : No
+[08/Apr/2023:09:44:55] (I): Server Info : nginx/1.16.0
+[08/Apr/2023:09:44:55] (I): PHP Version : 8.1.9
+[08/Apr/2023:09:44:55] (I): HTTPS : No
+[08/Apr/2023:09:44:55] (I): PHP Max Execution Time : 1200
+[08/Apr/2023:09:44:55] (I): PHP Max Input Vars : 4000
+[08/Apr/2023:09:44:55] (I): Max Upload Size : 314572800
+[08/Apr/2023:09:44:55] (I): Plugins:
+[08/Apr/2023:09:44:55] (I): [PLUGIN] Gutenberg : v15.5.0 (Gutenberg Team)
+[08/Apr/2023:09:44:55] (I): [PLUGIN] Image optimization service by Optimole : v3.6.0 (Optimole)
+[08/Apr/2023:09:44:55] (I): [PLUGIN] Otter – Page Builder Blocks &amp; Extensions for Gutenberg : v2.2.4 (ThemeIsle)
+[08/Apr/2023:09:44:55] (I): [PLUGIN] Simply Static : v2.2.9 (Patrick Posner)
+[08/Apr/2023:09:44:55] (I): [PLUGIN] Templates Patterns Collection : v1.1.37 (ThemeIsle)
