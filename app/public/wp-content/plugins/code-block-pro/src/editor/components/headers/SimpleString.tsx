@@ -1,17 +1,25 @@
 import { colord, AnyColor } from 'colord';
 import { Attributes, Lang } from '../../../types';
+import { findBackgroundColor, findTextColor } from '../../../util/colors';
 import { languages } from '../../../util/languages';
 
-export const SimpleString = ({
-    language,
-    bgColor,
-    textColor,
-    headerString,
-}: Partial<Attributes>) => {
+export const SimpleString = (attributes: Partial<Attributes>) => {
+    const { language, bgColor, textColor, headerString } = attributes;
     const bgC = colord(bgColor as AnyColor);
-    const bg = bgC.isDark() ? bgC.lighten(0.05) : bgC.darken(0.05);
+    let bg = bgC.isDark()
+        ? bgC.lighten(0.05).toHex()
+        : bgC.darken(0.05).toHex();
     const textC = colord(textColor as AnyColor);
-    const text = textC.isDark() ? textC.lighten(0.05) : textC.darken(0.05);
+    let text = textC.isDark()
+        ? textC.lighten(0.05).toHex()
+        : textC.darken(0.05).toHex();
+
+    if (bgColor?.startsWith('var(')) {
+        bg = findBackgroundColor(attributes) ?? bgColor;
+    }
+    if (textColor?.startsWith('var(')) {
+        text = findTextColor(attributes) ?? textColor;
+    }
     return (
         <span
             style={{
@@ -21,8 +29,8 @@ export const SimpleString = ({
                 marginBottom: '-2px',
                 width: '100%',
                 textAlign: 'left',
-                backgroundColor: bg.toHex(),
-                color: text.toHex(),
+                backgroundColor: bg,
+                color: text,
             }}>
             {headerString || languages[language as Lang]}
         </span>

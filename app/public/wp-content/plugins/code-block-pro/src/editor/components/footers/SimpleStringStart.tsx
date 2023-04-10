@@ -1,19 +1,24 @@
 import { colord, AnyColor } from 'colord';
 import { Attributes, Lang } from '../../../types';
+import { findBackgroundColor, findTextColor } from '../../../util/colors';
 import { languages } from '../../../util/languages';
 
-export const SimpleStringStart = ({
-    language,
-    bgColor,
-    textColor,
-    footerString,
-    footerLink,
-    footerLinkTarget,
-    disablePadding,
-}: Partial<Attributes>) => {
-    const bgC = colord(bgColor as AnyColor);
+export const SimpleStringStart = (attributes: Partial<Attributes>) => {
+    const {
+        language,
+        bgColor,
+        textColor,
+        footerString,
+        footerLink,
+        footerLinkTarget,
+        disablePadding,
+    } = attributes;
     const textC = colord(textColor as AnyColor);
-    const text = textC.isDark() ? textC.lighten(0.05) : textC.darken(0.05);
+    const text = textColor?.startsWith('var(')
+        ? findTextColor(attributes) ?? textColor
+        : textC.isDark()
+        ? textC.lighten(0.05).toHex()
+        : textC.darken(0.05).toHex();
     return (
         <span
             style={{
@@ -22,15 +27,15 @@ export const SimpleStringStart = ({
                 padding: disablePadding ? '10px 0 0 0' : '10px',
                 width: '100%',
                 justifyContent: 'flex-start',
-                backgroundColor: bgC.toHex(),
-                color: text.toHex(),
+                backgroundColor: findBackgroundColor(attributes) ?? bgColor,
+                color: text,
                 fontSize: '12px',
                 lineHeight: '1',
                 position: 'relative',
             }}>
             <Inner
                 text={footerString || languages[language as Lang]}
-                color={text.toHex()}
+                color={text}
                 link={footerLink}
                 linkTarget={footerLinkTarget}
             />

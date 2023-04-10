@@ -1,11 +1,16 @@
 import { useEffect, useState } from '@wordpress/element';
 import { applyFilters } from '@wordpress/hooks';
-import { getHighlighter, Lang, setCDN, Theme, setWasm } from 'shiki';
+import { getHighlighter, setCDN, Theme, setWasm } from 'shiki';
 import useSWRImmutable from 'swr/immutable';
 import defaultThemes from '../defaultThemes.json';
+import { Lang, ThemeOption } from '../types';
 import { getEditorLanguage } from '../util/languages';
 
-type Params = { theme: Theme; lang: Lang | 'ansi'; ready?: boolean };
+type Params = {
+    theme: Theme;
+    lang: Lang | 'ansi';
+    ready?: boolean;
+};
 
 const fetcher = ({ theme, lang, ready }: Params) => {
     if (!ready) throw new Error();
@@ -23,7 +28,7 @@ const fetcher = ({ theme, lang, ready }: Params) => {
     )?.[themeFiltered]?.['alias'] as Theme;
 
     return getHighlighter({
-        langs: [getEditorLanguage(lang)],
+        langs: lang === 'plaintext' ? undefined : [getEditorLanguage(lang)],
         theme: themeAlias ?? themeFiltered,
     });
 };
@@ -31,6 +36,10 @@ let once = false;
 
 export const useTheme = ({ theme, lang, ready = true }: Params) => {
     const [wasmLoaded, setWasmFileLoaded] = useState(false);
+    const themes = applyFilters(
+        'blocks.codeBlockPro.themes',
+        defaultThemes,
+    ) as ThemeOption;
     if (!once) {
         once = true;
         const assetDir = window.codeBlockPro?.pluginUrl + 'build/shiki/';
@@ -38,6 +47,7 @@ export const useTheme = ({ theme, lang, ready = true }: Params) => {
             applyFilters('blocks.codeBlockPro.assetDir', assetDir) as string,
         );
     }
+    if (themes[theme]?.custom) theme = 'css-variables';
     const { data: highlighter, error } = useSWRImmutable(
         { theme, lang, ready: ready && wasmLoaded },
         fetcher,
