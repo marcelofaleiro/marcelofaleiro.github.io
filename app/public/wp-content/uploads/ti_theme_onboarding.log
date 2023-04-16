@@ -1,19 +1,20 @@
-[14/Apr/2023:12:10:56] (I): WordPress Instance Info:
-[14/Apr/2023:12:10:56] (I): Home URL : http://deviofuzz.local
-[14/Apr/2023:12:10:56] (I): Site URL : http://deviofuzz.local
-[14/Apr/2023:12:10:56] (I): WordPress Version : 6.2
-[14/Apr/2023:12:10:56] (I): Onboarding Version : 1.1.37
-[14/Apr/2023:12:10:56] (I): Multisite : No
-[14/Apr/2023:12:10:56] (I): Server Info : nginx/1.16.0
-[14/Apr/2023:12:10:56] (I): PHP Version : 8.1.9
-[14/Apr/2023:12:10:56] (I): HTTPS : No
-[14/Apr/2023:12:10:56] (I): PHP Max Execution Time : 1200
-[14/Apr/2023:12:10:56] (I): PHP Max Input Vars : 4000
-[14/Apr/2023:12:10:56] (I): Max Upload Size : 314572800
-[14/Apr/2023:12:10:56] (I): Plugins:
-[14/Apr/2023:12:10:56] (I): [PLUGIN] Gutenberg : v15.5.1 (Gutenberg Team)
-[14/Apr/2023:12:10:56] (I): [PLUGIN] Image optimization service by Optimole : v3.6.1 (Optimole)
-[14/Apr/2023:12:10:56] (I): [PLUGIN] Prismatic : v3.3 (Jeff Starr)
-[14/Apr/2023:12:10:56] (I): [PLUGIN] Simply Static : v2.2.9 (Patrick Posner)
-[14/Apr/2023:12:10:56] (I): [PLUGIN] Templates Patterns Collection : v1.1.37 (ThemeIsle)
-[14/Apr/2023:12:10:56] (I): [PLUGIN] Orbit Fox Companion : v2.10.23 (Themeisle)
+[16/Apr/2023:08:39:09] (I): WordPress Instance Info:
+[16/Apr/2023:08:39:09] (I): Home URL : http://deviofuzz.local
+[16/Apr/2023:08:39:09] (I): Site URL : http://deviofuzz.local
+[16/Apr/2023:08:39:09] (I): WordPress Version : 6.2
+[16/Apr/2023:08:39:09] (I): Onboarding Version : 1.1.37
+[16/Apr/2023:08:39:09] (I): Multisite : No
+[16/Apr/2023:08:39:09] (I): Server Info : nginx/1.16.0
+[16/Apr/2023:08:39:09] (I): PHP Version : 8.1.9
+[16/Apr/2023:08:39:09] (I): HTTPS : No
+[16/Apr/2023:08:39:09] (I): PHP Max Execution Time : 1200
+[16/Apr/2023:08:39:09] (I): PHP Max Input Vars : 4000
+[16/Apr/2023:08:39:09] (I): Max Upload Size : 314572800
+[16/Apr/2023:08:39:09] (I): Plugins:
+[16/Apr/2023:08:39:09] (I): [PLUGIN] Gutenberg : v15.5.1 (Gutenberg Team)
+[16/Apr/2023:08:39:09] (I): [PLUGIN] Image optimization service by Optimole : v3.6.1 (Optimole)
+[16/Apr/2023:08:39:09] (I): [PLUGIN] Otter – Page Builder Blocks &amp; Extensions for Gutenberg : v2.2.4 (ThemeIsle)
+[16/Apr/2023:08:39:09] (I): [PLUGIN] Prismatic : v3.3 (Jeff Starr)
+[16/Apr/2023:08:39:09] (I): [PLUGIN] Simply Static : v2.2.9 (Patrick Posner)
+[16/Apr/2023:08:39:09] (I): [PLUGIN] Templates Patterns Collection : v1.1.37 (ThemeIsle)
+[16/Apr/2023:08:39:09] (I): [PLUGIN] Orbit Fox Companion : v2.10.23 (Themeisle)
