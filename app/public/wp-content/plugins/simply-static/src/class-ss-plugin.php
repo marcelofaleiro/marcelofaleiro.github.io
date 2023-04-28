@@ -15,7 +15,7 @@ class Plugin {
 	 * Plugin version
 	 * @var string
 	 */
-	const VERSION = '2.2.9';
+	const VERSION = '2.3.0';
 
 	/**
 	 * The slug of the plugin; used in actions, filters, i18n, table names, etc.
@@ -43,7 +43,7 @@ class Plugin {
 
 	/**
 	 * Archive creation process
-	 * @var Simply_Static\Archive_Creation_Job
+	 * @var \Simply_Static\Archive_Creation_Job
 	 */
 	protected $archive_creation_job = null;
 
@@ -418,6 +418,13 @@ class Plugin {
 		wp_send_json( array(
 			'html' => $content
 		) );
+	}
+
+	/**
+	 * @return Archive_Creation_Job|null
+	 */
+	public function get_archive_creation_job() {
+		return $this->archive_creation_job;
 	}
 
 	/**
