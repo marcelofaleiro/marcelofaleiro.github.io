@@ -29,3 +29,8 @@
 [13-Apr-2023 14:48:35] NOTICE: fpm is running, pid 3150
 [13-Apr-2023 14:48:35] NOTICE: ready to handle connections
 [14-Apr-2023 14:05:53] WARNING: [pool www] child 3158 said into stderr: "sh: gs: command not found"
+[06-May-2023 21:15:45] NOTICE: Terminating ...
+[06-May-2023 21:15:45] NOTICE: Terminating ...
+[06-May-2023 21:15:45] NOTICE: exiting, bye-bye!
+[06-May-2023 21:18:23] NOTICE: fpm is running, pid 2263
+[06-May-2023 21:18:23] NOTICE: ready to handle connections
